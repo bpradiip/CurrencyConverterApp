@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/nepal.png" style="border-radius: 50%;" type="image/x-icon">
+    <link rel="stylesheet" href="currency.css">
+    <title>Pradip Banjara || Currency Converter App</title>
+</head>
+<body class="clasic">
+    <div class="container">
+        <div class="output">
+
+            <h2><span id="exvalue"></span></h2>
+            <div>
+                Rate: <span id="exrate"></span>
+            </div>
+        </div>
+        <div class="action">
+            <div><input type="number" id="currency-id" value="1"></div>
+            <div class="select">
+                <div>
+                <label for="fcurrency">First Currency</label>
+                <select name="fcurrency" id="fcurrency">
+                    <option value="usd">USD</option>
+                </select>
+            </div>
+            <div>
+                <label for="scurrency">Second Currency</label>
+                <select name="scurrency" id="scurrency">
+                    <option value="npr">NPR</option>
+                </select>
+            </div>
+            </div>
+            <div>
+                <button id="convert" class="convert" onclick="calculate()">Convert </button>
+            </div>
+        </div>
+    </div>
+   
+    <script src="./currency.js"></script>
+</body>
+</html>
